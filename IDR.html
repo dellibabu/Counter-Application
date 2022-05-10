@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsha vardhan</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        .thunder{
+            margin-left: 500px;
+            margin: 2px solid black;
+            background-color:azure;
+            color: purple;
+            border-radius: 25px;
+            height: 600px;
+            width:400px;
+            text-align: center;
+            padding: 50px;
+            font-size: 40px;
+        }
+        button{
+            background-color:brown;
+            color:black;
+            font-size: 25px;
+            cursor: pointer;
+            border-radius: 30px;
+        }
+        button:hover{
+            color: white;
+            transition: 4s;
+        }
+    </style>
+</head>
+<body>
+    <div class="thunder">
+        <h1>Counter Application</h1>
+        <p>Here is the word counter app</p>
+        <h1 id="num">0</h1>
+        <button onclick="a()">Increment</button>
+        <button onclick="b()">Decrement</button>
+        <button onclick="c()">Reset</button>
+    </div>
+    <script>
+        function a(){
+            const a1=document.querySelector('#num').innerHTML
+            let p=parseInt(a1)+1
+            document.querySelector('#num').innerHTML=p;
+        }
+        function b(){
+            const a1=document.querySelector('#num').innerHTML
+            let p=parseInt(a1)-1
+            document.querySelector('#num').innerHTML=p;
+            document.querySelector('#num').style.color='red'
+        }
+        function c(){
+            document.querySelector('#num').innerHTML=0
+            document.querySelector('#num').style.color='blue'
+        }
+    </script>
+</body>
+</html>
